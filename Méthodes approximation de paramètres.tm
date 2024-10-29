@@ -3,7 +3,7 @@
 <style|generic>
 
 <\body>
-  Token d'accès Git : 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
+  Pouet posjiodnzjk pkdkk
 </body>
 
 <\initial>
