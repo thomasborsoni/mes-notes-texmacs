@@ -6,6 +6,8 @@
   <doc-data|<doc-title|<with|color|dark orange|Méthodes d'estimation de
   paramètres (suite)>>>
 
+  \;
+
   <\with|color|dark yellow>
     <section|<with|color|dark yellow|Moindres carrés>>
 
@@ -1835,6 +1837,500 @@
   <math|v> avec précision, tandis que l'identification des transitions
   actives/inactives permet d'estimer les paramètres de commutation du
   processus <math|J<rsub|t>>.
+
+  \;
+
+  <with|color|dark yellow|<section|Méthode PBDW>>
+
+  La méthode<nbsp><strong|Parameterized-Background Data-Weak><nbsp>(PBDW) est
+  une approche d'assimilation de données qui vise à intégrer des observations
+  dans des modèles basés sur des équations aux dérivées partielles (EDP), en
+  particulier dans le contexte de la prévision numérique et de la
+  modélisation des systèmes dynamiques. Cette méthode représente une avancée
+  par rapport à d'autres techniques d'assimilation de données, en se
+  concentrant sur l'utilisation de données incomplètes ou incertaines tout en
+  maintenant une certaine souplesse dans le traitement des paramètres du
+  modèle.
+
+  <subsection*|Contexte et motivation>
+
+  Dans les systèmes dynamiques, notamment ceux modélisés par des EDP (comme
+  la météo ou l'océanographie), il est fréquent que les données d'observation
+  soient limitées, bruitées ou incomplètes. Les méthodes classiques
+  d'assimilation de données, telles que la 3D-Var ou la 4D-Var, nécessitent
+  souvent une connaissance précise des erreurs et des structures de
+  covariance, ce qui peut être difficile à obtenir. La méthode PBDW vise à
+  contourner ces limitations en adoptant une approche moins rigide dans la
+  manière dont les données sont intégrées.
+
+  <subsection*|Principes de la méthode PBDW>
+
+  <subsubsection*|1. <strong|Approche Background Data-Weak>>
+
+  Le terme <strong|"Data-Weak"> fait référence à une méthode qui ne nécessite
+  pas de dépendance forte aux observations. Cela signifie que la méthode peut
+  fonctionner même lorsque les données d'observation sont peu nombreuses ou
+  bruyantes. Dans un cadre PBDW, l'objectif est de tirer parti des
+  observations disponibles, mais sans en faire la pièce maîtresse de
+  l'assimilation.
+
+  <subsubsection*|2.<nbsp><strong|Parameterized Background>>
+
+  Le terme<nbsp><strong|"Parameterized Background"><nbsp>indique que
+  l'approche utilise une forme paramétrique pour représenter l'état de fond
+  (background state) du système. Cela signifie que l'état du système est
+  exprimé en termes de paramètres qui peuvent être ajustés en fonction des
+  observations. Cette paramétrisation permet d'intégrer une certaine
+  flexibilité dans la manière dont les informations sont utilisées pour
+  améliorer les prévisions.
+
+  <subsection*|Étapes de la méthode PBDW>
+
+  <\enumerate>
+    <item><strong|Modèle dynamique><nbsp>: On commence par un modèle
+    dynamique décrit par une EDP, qui peut être formulée de manière
+    paramétrique. Le modèle a une forme :
+
+    <equation*|L<around*|(|u,\<theta\>|)>=0,>
+
+    où<nbsp><math|u><nbsp>est la solution du modèle
+    et<nbsp><math|\<theta\>><nbsp>représente les paramètres à identifier ou à
+    estimer.
+
+    <item><strong|Background State><nbsp>: Un état de
+    fond<nbsp><math|u<rsub|b>><nbsp>est défini, souvent basé sur des
+    prévisions précédentes ou une solution connue. Cet état est également
+    paramétré pour capturer des caractéristiques importantes du système.
+
+    <item><strong|Assimilation des données><nbsp>: Les observations
+    disponibles,<nbsp><math|y>, sont intégrées dans le modèle de manière
+    ``faible". Cela signifie que les observations sont utilisées pour ajuster
+    les paramètres du modèle plutôt que d'imposer strictement la solution du
+    modèle aux données.
+
+    <item><strong|Formulation de l'erreur><nbsp>: Une fonction de coût est
+    souvent définie pour mesurer l'écart entre l'état prédit par le modèle
+    (avec des paramètres ajustés) et les observations. Cela peut impliquer
+    une minimisation de l'erreur quadratique entre les données prédites et
+    observées.
+
+    <item><strong|Optimisation><nbsp>: Les paramètres sont optimisés par des
+    techniques d'optimisation pour minimiser la fonction de coût. Cela permet
+    d'affiner le modèle en tenant compte des incertitudes des données.
+  </enumerate>
+
+  <subsection*|Avantages de la méthode PBDW>
+
+  <\itemize>
+    <item><strong|Flexibilité><nbsp>: La méthode PBDW offre une flexibilité
+    importante dans l'intégration des données, ce qui est essentiel lorsque
+    les observations sont limitées ou bruitées.
+
+    <item><strong|Robustesse><nbsp>: Elle est moins sensible aux erreurs de
+    mesure et peut donner des résultats fiables même en présence
+    d'incertitudes importantes.
+
+    <item><strong|Adaptabilité><nbsp>: PBDW peut être appliquée à divers
+    types de modèles et domaines, ce qui la rend très adaptable aux besoins
+    spécifiques de différents systèmes dynamiques.
+  </itemize>
+
+  <subsection*|Applications de la méthode PBDW>
+
+  <\itemize>
+    <item><strong|Prévision météorologique><nbsp>: Dans le cadre de la
+    prévision numérique, la méthode PBDW peut être utilisée pour intégrer des
+    données météorologiques incomplètes ou incertaines afin d'améliorer la
+    qualité des prévisions.
+
+    <item><strong|Modélisation océanographique><nbsp>: Elle peut également
+    être appliquée pour estimer les états océaniques à partir de données de
+    surface limitées.
+
+    <item><strong|Hydrologie><nbsp>: Dans les modèles hydrologiques, PBDW
+    peut aider à ajuster les paramètres de modélisation basés sur des mesures
+    d'écoulement ou de précipitation.
+  </itemize>
+
+  <subsection*|Conclusion>
+
+  La méthode<nbsp><strong|Parameterized-Background Data-Weak
+  (PBDW)><nbsp>représente une avancée dans l'assimilation de données pour les
+  modèles d'EDP. En utilisant une approche flexible et robuste pour intégrer
+  des observations, elle permet d'améliorer la prévision et la compréhension
+  des systèmes dynamiques, même lorsque les données disponibles sont limitées
+  ou incertaines. Cette méthode est particulièrement précieuse dans des
+  domaines tels que la météorologie et l'océanographie, où les conditions
+  dynamiques peuvent changer rapidement et où les données peuvent être
+  sporadiques ou bruitées.
+
+  \;
+
+  \;
+
+  \;
+
+  <doc-data|<doc-title|LASSO>>
+
+  La méthode LASSO (Least Absolute Shrinkage and Selection Operator) est une
+  technique de régression utilisée principalement pour la sélection de
+  variables et la régularisation. Elle est particulièrement utile lorsque
+  vous avez un grand nombre de variables explicatives (prédicteurs) et que
+  vous souhaitez construire un modèle prédictif tout en évitant le
+  surajustement. Voici une explication détaillée de cette méthode :
+
+  <subsection*|1. Principe de Base>
+
+  LASSO est une forme de régression linéaire qui inclut une pénalisation sur
+  la somme des valeurs absolues des coefficients des prédicteurs. L'idée
+  principale est d'ajuster le modèle de régression tout en imposant une
+  contrainte qui favorise la parcimonie dans la sélection des variables.
+
+  <subsection*|2. Formulation Mathématique>
+
+  L'objectif de LASSO est de minimiser la fonction de coût suivante :
+
+  <equation*|<with|mode|text|Minimiser><space|1em>J<around*|(|\<beta\>|)>=<big|sum><rsub|i=1><rsup|n><around*|(|y<rsub|i>-X<rsub|i>\<beta\>|)><rsup|2>+\<lambda\><big|sum><rsub|j=1><rsup|p>\<mid\>\<beta\><rsub|j>\<mid\>>
+
+  où :
+
+  <\itemize>
+    <item><math|y<rsub|i>> : la variable dépendante (cible).
+
+    <item><math|X<rsub|i>> : le vecteur des variables indépendantes
+    (prédicteurs) pour l'observation <math|i>i.
+
+    <item><math|\<beta\>> : le vecteur des coefficients associés aux
+    prédicteurs.
+
+    <item><math|n> : le nombre d'observations.
+
+    <item><math|p> : le nombre de prédicteurs.
+
+    <item><math|\<lambda\>> : le paramètre de régularisation, qui contrôle le
+    degré de pénalisation des coefficients.
+  </itemize>
+
+  <subsection*|3. Composantes de la Fonction de Coût>
+
+  <\itemize>
+    <item><strong|Erreur Quadratique> : La première partie de la fonction de
+    coût, <math|<big|sum><rsub|i=1><rsup|n><around*|(|y<rsub|i>-X<rsub|i>\<beta\>|)><rsup|2>>,
+    mesure la somme des carrés des erreurs, représentant la qualité de
+    l'ajustement du modèle aux données.
+
+    <item><strong|Pénalisation L1> : La deuxième partie,
+    <math|\<lambda\><big|sum><rsub|j=1><rsup|p>\<mid\>\<beta\><rsub|j>\<mid\>>,
+    est la régularisation L1. Cette contrainte pénalise les grands
+    coefficients et pousse certains d'entre eux à être exactement nuls. Cela
+    permet de réaliser une sélection de variables en éliminant celles qui
+    n'ont pas d'impact significatif sur la variable cible.
+  </itemize>
+
+  <subsection*|4. Interprétation du Paramètre de Régularisation
+  <math|\<lambda\>>>
+
+  <\itemize>
+    <item>Lorsque <math|\<lambda\>=0>, LASSO revient à la régression linéaire
+    classique sans régularisation.
+
+    <item>En augmentant <math|\<lambda\>>, on impose une pénalisation plus
+    forte, ce qui peut réduire la variance du modèle, mais au prix d'une
+    augmentation du biais.
+
+    <item>Pour choisir la meilleure valeur de <math|\<lambda\>>, on peut
+    utiliser des méthodes comme la validation croisée. Cela permet d'évaluer
+    la performance du modèle avec différentes valeurs de <math|\<lambda\>> et
+    de sélectionner celle qui minimise l'erreur de prédiction.
+  </itemize>
+
+  <subsection*|5. Avantages de LASSO>
+
+  <\itemize>
+    <item><strong|Sélection de Variables> : LASSO est efficace pour
+    identifier les variables les plus importantes dans un modèle, surtout
+    lorsqu'il y a une grande dimensionnalité.
+
+    <item><strong|Réduction du Surajustement> : En réduisant la complexité du
+    modèle, LASSO aide à éviter le surajustement, ce qui améliore les
+    performances sur des données de test.
+
+    <item><strong|Interprétabilité> : Les modèles résultants sont souvent
+    plus simples et plus faciles à interpréter grâce à la réduction du nombre
+    de variables.
+  </itemize>
+
+  <subsection*|6. Limites de LASSO>
+
+  <\itemize>
+    <item><strong|Corrélation entre Variables> : Si deux variables
+    prédictives sont fortement corrélées, LASSO tend à en sélectionner une au
+    détriment de l'autre, ce qui peut mener à une perte d'information.
+
+    <item><strong|Modèles Non Linéaires> : LASSO est basé sur un modèle
+    linéaire ; pour des relations non linéaires, d'autres méthodes comme le
+    LASSO généralisé ou les arbres de décision peuvent être plus appropriés.
+  </itemize>
+
+  <subsection*|7. Mise en ÷uvre>
+
+  LASSO peut être facilement implémenté dans de nombreux langages de
+  programmation et bibliothèques statistiques. Par exemple, en Python, on
+  peut utiliser la bibliothèque <code*|scikit-learn> :
+
+  <\python>
+    from sklearn.linear_model import Lasso
+
+    \;
+
+    # Création de l objet Lasso avec un paramètre lambda
+
+    lasso = Lasso(alpha=0.1)
+
+    \;
+
+    # Ajustement du modèle
+
+    lasso.fit(X_train, y_train)
+
+    \;
+
+    # Prédictions
+
+    predictions = lasso.predict(X_test)
+
+    \;
+
+    # Coefficients
+
+    coefficients = lasso.coef_
+
+    \;
+  </python>
+
+  <subsection*|Conclusion>
+
+  En résumé, la méthode LASSO est un outil puissant pour la régression et la
+  sélection de variables, particulièrement utile dans des contextes où les
+  données sont nombreuses et les variables sont corrélées. Sa capacité à
+  réduire le nombre de variables tout en maintenant la performance du modèle
+  en fait une approche couramment utilisée dans l'analyse de données, la
+  modélisation prédictive et l'apprentissage automatique.
+
+  \;
+
+  <doc-data|<doc-title|LASSO généralisé>>
+
+  Le LASSO généralisé, souvent appelé <strong|GLASSO> (Generalized Least
+  Absolute Shrinkage and Selection Operator), est une extension de la méthode
+  LASSO qui permet de s'adapter à des situations plus complexes où les
+  données peuvent suivre une distribution non gaussienne ou lorsque l'on
+  souhaite modéliser des relations non linéaires. Le GLASSO est
+  particulièrement utilisé dans les contextes de la statistique et de
+  l'apprentissage automatique pour la sélection de variables et la
+  régularisation.
+
+  <subsection*|1. Principe du LASSO Généralisé>
+
+  Le GLASSO étend le LASSO en permettant de travailler avec des distributions
+  d'erreurs non normales (par exemple, binomiale, poissonienne) et en
+  intégrant des méthodes pour gérer les relations entre variables. Cela le
+  rend plus flexible et applicable à un éventail plus large de problèmes.
+
+  <subsection*|2. Formulation Mathématique>
+
+  La formulation de base du LASSO généralisé peut être exprimée comme suit :
+
+  <equation*|<with|mode|text|Minimiser><space|1em>J<around*|(|\<beta\>|)>=<big|sum><rsub|i=1><rsup|n>L<around*|(|y<rsub|i>,<wide|y|^><rsub|i>|)>+\<lambda\><big|sum><rsub|j=1><rsup|p>\<mid\>\<beta\><rsub|j>\<mid\>>
+
+  où :
+
+  <\itemize>
+    <item><math|L<around*|(|y<rsub|i>,<wide|y|^><rsub|i>|)>> est la fonction
+    de perte qui mesure l'erreur entre les valeurs observées <math|y<rsub|i>>
+    et les valeurs prédites <math|<wide|y|^><rsub|i>> (par exemple, la perte
+    logistique pour des données binomiales).
+
+    <item>Le terme de régularisation <math|\<lambda\><big|sum><rsub|j=1><rsup|p>\<mid\>\<beta\><rsub|j>\<mid\>>
+    reste le même que dans le LASSO classique, servant à encourager la
+    parcimonie en forçant certains coefficients à être nuls.
+  </itemize>
+
+  <subsection*|3. Composantes de la Fonction de Coût>
+
+  <\itemize>
+    <item><strong|Fonction de Perte> : Contrairement à LASSO, qui utilise une
+    perte quadratique, le GLASSO permet d'utiliser diverses fonctions de
+    perte adaptées à des distributions différentes. Par exemple, pour des
+    données binomiales, on pourrait utiliser la fonction de perte logistique
+    :
+
+    <equation*|L<around*|(|y<rsub|i>,<wide|y|^><rsub|i>|)>=-<around*|(|y<rsub|i>log\<nospace\><around*|(|<wide|y|^><rsub|i>|)>+<around*|(|1-y<rsub|i>|)>log\<nospace\><around*|(|1-<wide|y|^><rsub|i>|)>|)>>
+
+    \;
+
+    <item><strong|Pénalisation L1> : Comme pour le LASSO, la régularisation
+    L1 est utilisée pour encourager la sélection de variables, mais le GLASSO
+    permet également d'incorporer des pénalisations supplémentaires si
+    nécessaire, comme la pénalisation L2 (ridge).
+  </itemize>
+
+  <subsection*|4. Avantages du LASSO Généralisé>
+
+  <\itemize>
+    <item><strong|Flexibilité> : GLASSO peut être appliqué à une variété de
+    modèles statistiques, y compris ceux qui nécessitent des distributions
+    d'erreurs spécifiques, ce qui le rend adapté à différents types de
+    données.
+
+    <item><strong|Sélection de Variables> : Tout comme LASSO, GLASSO permet
+    la sélection de variables tout en évitant le surajustement, mais avec la
+    possibilité d'utiliser des modèles non linéaires ou des variables
+    dépendantes.
+
+    <item><strong|Gestion des Corrélations> : GLASSO est souvent utilisé dans
+    des contextes où les variables prédictives sont corrélées, car il peut
+    s'adapter à ces structures tout en sélectionnant un sous-ensemble de
+    variables pertinentes.
+  </itemize>
+
+  <subsection*|5. Application du LASSO Généralisé>
+
+  Le LASSO généralisé est souvent utilisé dans des domaines tels que :
+
+  <\itemize>
+    <item><strong|Bioinformatique> : Pour sélectionner des gènes
+    significatifs à partir de données d'expression génique.
+
+    <item><strong|Économie> : Dans les modèles de régression avec des
+    variables dépendantes et non gaussiennes.
+
+    <item><strong|Apprentissage Automatique> : Pour créer des modèles
+    prédictifs robustes qui incluent la sélection de variables.
+  </itemize>
+
+  <subsection*|6. Mise en ÷uvre>
+
+  Le LASSO généralisé peut être mis en ÷uvre dans plusieurs environnements de
+  programmation. Par exemple, en Python, des bibliothèques telles que
+  <code*|statsmodels> ou <code*|scikit-learn> peuvent être utilisées pour
+  appliquer le GLASSO à différents types de modèles.
+
+  \;
+
+  <\python>
+    import numpy as np
+
+    import statsmodels.api as sm
+
+    \;
+
+    # Exemple de données
+
+    X = np.random.rand(100, 10)
+
+    y = np.random.binomial(n=1, p=0.5, size=100)
+
+    \;
+
+    # Modèle GLASSO (par exemple, régression logistique avec LASSO)
+
+    model = sm.GLM(y, X, family=sm.families.Binomial(),
+    link=sm.families.links.logit())
+
+    results = model.fit_regularized(method='elastic_net', alpha=0.1, L1_wt=1)
+
+    \;
+
+    # Coefficients estimés
+
+    coefficients = results.params
+
+    \;
+  </python>
+
+  <subsection*|7. Limites du LASSO Généralisé>
+
+  <\itemize>
+    <item><strong|Complexité Computationnelle> : Bien que GLASSO soit plus
+    flexible, il peut également être plus complexe à ajuster et à
+    interpréter, en particulier avec des modèles non linéaires.
+
+    <item><strong|Choix de la Fonction de Perte> : La performance du GLASSO
+    dépend fortement de la sélection appropriée de la fonction de perte et du
+    paramètre de régularisation <math|\<lambda\>>.
+  </itemize>
+
+  <subsection*|Conclusion>
+
+  En résumé, le LASSO généralisé est une méthode puissante et flexible pour
+  la régression et la sélection de variables qui permet de travailler avec
+  des modèles non linéaires et des distributions d'erreurs variées. En
+  combinant les avantages du LASSO classique avec une approche généralisée,
+  le GLASSO est largement utilisé dans divers domaines où la complexité des
+  données nécessite des solutions plus robustes.
+
+  \;
+
+  <section|STLS>
+
+  \;
+
+  Recently, Rudy et al. (2017) proposed to utilize sparse regression to
+  approximate the solution of \<xi\> as follows,\ 
+
+  2\ 
+
+  \<xi\>=argmin\<xi\>\B \<Theta\>\<xi\>\B\<minus\>Ut +\<lambda\> \<xi\>\B .
+  (2.5) 20\ 
+
+  It means that the prescribed terms only show up in the derived PDE if their
+  effect on\ 
+
+  the error \<Theta\>\<xi\>\B \<minus\> Ut is over their addition to \<xi\>\B\ 
+
+  right-hand side of equation (2.5), makes this problem
+  np-hard.<next-line>Specifically, the convex relaxation of the l0
+  optimization problem in equation (2.5) can\ 
+
+  be written as\ 
+
+  0\ 
+
+  . The l0 term, i.e. the last term on the\ 
+
+  2\ 
+
+  \<xi\>=argmin\<xi\>\B \<Theta\>\<xi\>\B\<minus\>Ut +\<lambda\> \<xi\>\B .
+  (2.6) 21\ 
+
+  This convex optimization problem can be solved by the least absolute
+  shrinkage and selection operator (LASSO) (Tibshirani 1996). However,
+  previous studies demonstrated that LASSO tends to have difficulty in
+  finding a sparse basis if the columns in the matrix \<Theta\> are
+  correlated. Recently, Rudy et al. (2017) proposed an alternative method
+  called sequentially threshold least squares (STLS) method. In STLS, a least
+  squares predictor is obtained and a hard threshold is performed on the
+  regression coefficients. The process is repeated recursively on the
+  remaining nonzero coefficients.\ 
+
+  As reported by Rudy et al. (2017), STLS performed better than LASSO in most
+  of cases but still has the challenge of correlation in the data. In order
+  to overcome this problem, ridge regression with an l2 regularizer has been
+  proposed by Rudy et al. (2017) to replace the least squares in STLS, that
+  is,\ 
+
+  \<xi\>\B = arg min\<xi\> \<parallel\>\<Theta\>\<xi\> \<minus\>
+  Ut\<parallel\>2 + \<lambda\> \<parallel\>\<xi\>\<parallel\>2 = (\<Theta\>T
+  \<Theta\> + \<lambda\>I)\<minus\>1\<Theta\>T Ut. (2.7)\ 
+
+  This method is called sequential threshold ridge regression (STRidge) (Rudy
+  et al. 2017). A variation of test cases in the recent works Rudy et al.
+  (2017, 2019) have demonstrated that STRidge has the best empirical
+  performance. Note that a different threshold tolerance would result in a
+  different level of sparsity in the final solution. To find the best
+  tolerance, predictors are trained for varying tolerances and their
+  performances are evaluated.
 </body>
 
 <\initial>
@@ -1847,12 +2343,34 @@
   <\collection>
     <associate|auto-1|<tuple|1|1>>
     <associate|auto-10|<tuple|<with|mode|<quote|math>|\<bullet\>>|2>>
-    <associate|auto-100|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-101|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-102|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-103|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-100|<tuple|9|?>>
+    <associate|auto-101|<tuple|9|?>>
+    <associate|auto-102|<tuple|9|?>>
+    <associate|auto-103|<tuple|9|?>>
+    <associate|auto-104|<tuple|9|?>>
+    <associate|auto-105|<tuple|9|?>>
+    <associate|auto-106|<tuple|5|?>>
+    <associate|auto-107|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-108|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-109|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
     <associate|auto-11|<tuple|<with|mode|<quote|math>|\<bullet\>>|2>>
+    <associate|auto-110|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-111|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-112|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-113|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-114|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-115|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-116|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-117|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-118|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-119|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
     <associate|auto-12|<tuple|<with|mode|<quote|math>|\<bullet\>>|2>>
+    <associate|auto-120|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-121|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-122|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-123|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-124|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-125|<tuple|10|?>>
     <associate|auto-13|<tuple|<with|mode|<quote|math>|\<bullet\>>|2>>
     <associate|auto-14|<tuple|<with|mode|<quote|math>|\<bullet\>>|2>>
     <associate|auto-15|<tuple|2.2|?>>
