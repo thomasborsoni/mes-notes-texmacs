@@ -1261,7 +1261,8 @@
   pour <math|v> est donc une combinaison de quelques fonctions de la
   bibliothèque initiale, avec des coefficients pondérés, par exemple :
 
-  <equation*|v<around*|(|X,t|)>=\<xi\><rsub|1>X+\<xi\><rsub|2>X<rsup|2>+\<xi\><rsub|3>sin\<nospace\><around*|(|X|)>>
+  <equation*|v<around*|(|X,t|)>=\<xi\><rsub|1>X+\<xi\><rsub|2>X<rsup|2>+\<xi\><rsub|3>
+  sin\<nospace\><around*|(|X|)>>
 
   <subsection*|Implémentation de SINDy pour un Système Intermittent>
 
@@ -2342,130 +2343,130 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|1|1>>
-    <associate|auto-10|<tuple|<with|mode|<quote|math>|\<bullet\>>|2>>
-    <associate|auto-100|<tuple|9|?>>
-    <associate|auto-101|<tuple|9|?>>
-    <associate|auto-102|<tuple|9|?>>
-    <associate|auto-103|<tuple|9|?>>
-    <associate|auto-104|<tuple|9|?>>
-    <associate|auto-105|<tuple|9|?>>
-    <associate|auto-106|<tuple|5|?>>
-    <associate|auto-107|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-108|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-109|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-11|<tuple|<with|mode|<quote|math>|\<bullet\>>|2>>
-    <associate|auto-110|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-111|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-112|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-113|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-114|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-115|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-116|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-117|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-118|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-119|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-12|<tuple|<with|mode|<quote|math>|\<bullet\>>|2>>
-    <associate|auto-120|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-121|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-122|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-123|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-124|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-125|<tuple|10|?>>
-    <associate|auto-13|<tuple|<with|mode|<quote|math>|\<bullet\>>|2>>
-    <associate|auto-14|<tuple|<with|mode|<quote|math>|\<bullet\>>|2>>
-    <associate|auto-15|<tuple|2.2|?>>
-    <associate|auto-16|<tuple|2.2|?>>
-    <associate|auto-17|<tuple|2.2|?>>
-    <associate|auto-18|<tuple|5|?>>
-    <associate|auto-19|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-10|<tuple|<with|mode|<quote|math>|\<bullet\>>|3>>
+    <associate|auto-100|<tuple|9|24>>
+    <associate|auto-101|<tuple|9|25>>
+    <associate|auto-102|<tuple|9|25>>
+    <associate|auto-103|<tuple|9|25>>
+    <associate|auto-104|<tuple|9|25>>
+    <associate|auto-105|<tuple|9|25>>
+    <associate|auto-106|<tuple|5|25>>
+    <associate|auto-107|<tuple|<with|mode|<quote|math>|\<bullet\>>|26>>
+    <associate|auto-108|<tuple|<with|mode|<quote|math>|\<bullet\>>|26>>
+    <associate|auto-109|<tuple|<with|mode|<quote|math>|\<bullet\>>|26>>
+    <associate|auto-11|<tuple|<with|mode|<quote|math>|\<bullet\>>|3>>
+    <associate|auto-110|<tuple|<with|mode|<quote|math>|\<bullet\>>|26>>
+    <associate|auto-111|<tuple|<with|mode|<quote|math>|\<bullet\>>|27>>
+    <associate|auto-112|<tuple|<with|mode|<quote|math>|\<bullet\>>|27>>
+    <associate|auto-113|<tuple|<with|mode|<quote|math>|\<bullet\>>|27>>
+    <associate|auto-114|<tuple|<with|mode|<quote|math>|\<bullet\>>|27>>
+    <associate|auto-115|<tuple|<with|mode|<quote|math>|\<bullet\>>|27>>
+    <associate|auto-116|<tuple|<with|mode|<quote|math>|\<bullet\>>|28>>
+    <associate|auto-117|<tuple|<with|mode|<quote|math>|\<bullet\>>|28>>
+    <associate|auto-118|<tuple|<with|mode|<quote|math>|\<bullet\>>|28>>
+    <associate|auto-119|<tuple|<with|mode|<quote|math>|\<bullet\>>|29>>
+    <associate|auto-12|<tuple|<with|mode|<quote|math>|\<bullet\>>|3>>
+    <associate|auto-120|<tuple|<with|mode|<quote|math>|\<bullet\>>|29>>
+    <associate|auto-121|<tuple|<with|mode|<quote|math>|\<bullet\>>|29>>
+    <associate|auto-122|<tuple|<with|mode|<quote|math>|\<bullet\>>|29>>
+    <associate|auto-123|<tuple|<with|mode|<quote|math>|\<bullet\>>|30>>
+    <associate|auto-124|<tuple|<with|mode|<quote|math>|\<bullet\>>|30>>
+    <associate|auto-125|<tuple|10|30>>
+    <associate|auto-13|<tuple|<with|mode|<quote|math>|\<bullet\>>|4>>
+    <associate|auto-14|<tuple|<with|mode|<quote|math>|\<bullet\>>|4>>
+    <associate|auto-15|<tuple|2.2|4>>
+    <associate|auto-16|<tuple|2.2|4>>
+    <associate|auto-17|<tuple|2.2|4>>
+    <associate|auto-18|<tuple|5|5>>
+    <associate|auto-19|<tuple|<with|mode|<quote|math>|\<bullet\>>|5>>
     <associate|auto-2|<tuple|1.1|1>>
-    <associate|auto-20|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-21|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-22|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-23|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-24|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-25|<tuple|2.3|?>>
-    <associate|auto-26|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-27|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-28|<tuple|6|?>>
-    <associate|auto-29|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-20|<tuple|<with|mode|<quote|math>|\<bullet\>>|5>>
+    <associate|auto-21|<tuple|<with|mode|<quote|math>|\<bullet\>>|6>>
+    <associate|auto-22|<tuple|<with|mode|<quote|math>|\<bullet\>>|6>>
+    <associate|auto-23|<tuple|<with|mode|<quote|math>|\<bullet\>>|6>>
+    <associate|auto-24|<tuple|<with|mode|<quote|math>|\<bullet\>>|6>>
+    <associate|auto-25|<tuple|2.3|6>>
+    <associate|auto-26|<tuple|<with|mode|<quote|math>|\<bullet\>>|7>>
+    <associate|auto-27|<tuple|<with|mode|<quote|math>|\<bullet\>>|7>>
+    <associate|auto-28|<tuple|6|8>>
+    <associate|auto-29|<tuple|<with|mode|<quote|math>|\<bullet\>>|8>>
     <associate|auto-3|<tuple|1.2|1>>
-    <associate|auto-30|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-31|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-32|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-33|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-34|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-35|<tuple|3|?>>
-    <associate|auto-36|<tuple|3|?>>
-    <associate|auto-37|<tuple|2|?>>
-    <associate|auto-38|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-39|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-30|<tuple|<with|mode|<quote|math>|\<bullet\>>|8>>
+    <associate|auto-31|<tuple|<with|mode|<quote|math>|\<bullet\>>|8>>
+    <associate|auto-32|<tuple|<with|mode|<quote|math>|\<bullet\>>|8>>
+    <associate|auto-33|<tuple|<with|mode|<quote|math>|\<bullet\>>|9>>
+    <associate|auto-34|<tuple|<with|mode|<quote|math>|\<bullet\>>|9>>
+    <associate|auto-35|<tuple|3|9>>
+    <associate|auto-36|<tuple|3|9>>
+    <associate|auto-37|<tuple|2|10>>
+    <associate|auto-38|<tuple|<with|mode|<quote|math>|\<bullet\>>|10>>
+    <associate|auto-39|<tuple|<with|mode|<quote|math>|\<bullet\>>|10>>
     <associate|auto-4|<tuple|1.2.1|1>>
-    <associate|auto-40|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-41|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-42|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-43|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-44|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-45|<tuple|4|?>>
-    <associate|auto-46|<tuple|4.1|?>>
-    <associate|auto-47|<tuple|4.1|?>>
-    <associate|auto-48|<tuple|4.1|?>>
-    <associate|auto-49|<tuple|3|?>>
+    <associate|auto-40|<tuple|<with|mode|<quote|math>|\<bullet\>>|10>>
+    <associate|auto-41|<tuple|<with|mode|<quote|math>|\<bullet\>>|11>>
+    <associate|auto-42|<tuple|<with|mode|<quote|math>|\<bullet\>>|11>>
+    <associate|auto-43|<tuple|<with|mode|<quote|math>|\<bullet\>>|11>>
+    <associate|auto-44|<tuple|<with|mode|<quote|math>|\<bullet\>>|11>>
+    <associate|auto-45|<tuple|4|11>>
+    <associate|auto-46|<tuple|4.1|11>>
+    <associate|auto-47|<tuple|4.1|12>>
+    <associate|auto-48|<tuple|4.1|12>>
+    <associate|auto-49|<tuple|3|12>>
     <associate|auto-5|<tuple|2|2>>
-    <associate|auto-50|<tuple|5|?>>
-    <associate|auto-51|<tuple|5|?>>
-    <associate|auto-52|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-53|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-54|<tuple|4|?>>
-    <associate|auto-55|<tuple|4.2|?>>
-    <associate|auto-56|<tuple|4.2|?>>
-    <associate|auto-57|<tuple|3|?>>
-    <associate|auto-58|<tuple|3|?>>
-    <associate|auto-59|<tuple|3|?>>
+    <associate|auto-50|<tuple|5|13>>
+    <associate|auto-51|<tuple|5|13>>
+    <associate|auto-52|<tuple|<with|mode|<quote|math>|\<bullet\>>|13>>
+    <associate|auto-53|<tuple|<with|mode|<quote|math>|\<bullet\>>|13>>
+    <associate|auto-54|<tuple|4|14>>
+    <associate|auto-55|<tuple|4.2|14>>
+    <associate|auto-56|<tuple|4.2|14>>
+    <associate|auto-57|<tuple|3|14>>
+    <associate|auto-58|<tuple|3|15>>
+    <associate|auto-59|<tuple|3|15>>
     <associate|auto-6|<tuple|2.1|2>>
-    <associate|auto-60|<tuple|3|?>>
-    <associate|auto-61|<tuple|5|?>>
-    <associate|auto-62|<tuple|5|?>>
-    <associate|auto-63|<tuple|5|?>>
-    <associate|auto-64|<tuple|5|?>>
-    <associate|auto-65|<tuple|5|?>>
-    <associate|auto-66|<tuple|5|?>>
-    <associate|auto-67|<tuple|5|?>>
-    <associate|auto-68|<tuple|5|?>>
-    <associate|auto-69|<tuple|5|?>>
+    <associate|auto-60|<tuple|3|15>>
+    <associate|auto-61|<tuple|5|15>>
+    <associate|auto-62|<tuple|5|15>>
+    <associate|auto-63|<tuple|5|16>>
+    <associate|auto-64|<tuple|5|16>>
+    <associate|auto-65|<tuple|5|16>>
+    <associate|auto-66|<tuple|5|16>>
+    <associate|auto-67|<tuple|5|16>>
+    <associate|auto-68|<tuple|5|16>>
+    <associate|auto-69|<tuple|5|17>>
     <associate|auto-7|<tuple|2.1|2>>
-    <associate|auto-70|<tuple|5|?>>
-    <associate|auto-71|<tuple|3|?>>
-    <associate|auto-72|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-73|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-74|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-75|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-76|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-77|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-78|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-79|<tuple|4|?>>
-    <associate|auto-8|<tuple|6|2>>
-    <associate|auto-80|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-81|<tuple|6|?>>
-    <associate|auto-82|<tuple|6|?>>
-    <associate|auto-83|<tuple|3|?>>
-    <associate|auto-84|<tuple|7|?>>
-    <associate|auto-85|<tuple|7|?>>
-    <associate|auto-86|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-87|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-88|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-89|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-9|<tuple|<with|mode|<quote|math>|\<bullet\>>|2>>
-    <associate|auto-90|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-91|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-92|<tuple|8|?>>
-    <associate|auto-93|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-94|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-95|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-96|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-97|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-98|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|auto-99|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
+    <associate|auto-70|<tuple|5|17>>
+    <associate|auto-71|<tuple|3|17>>
+    <associate|auto-72|<tuple|<with|mode|<quote|math>|\<bullet\>>|17>>
+    <associate|auto-73|<tuple|<with|mode|<quote|math>|\<bullet\>>|18>>
+    <associate|auto-74|<tuple|<with|mode|<quote|math>|\<bullet\>>|18>>
+    <associate|auto-75|<tuple|<with|mode|<quote|math>|\<bullet\>>|18>>
+    <associate|auto-76|<tuple|<with|mode|<quote|math>|\<bullet\>>|18>>
+    <associate|auto-77|<tuple|<with|mode|<quote|math>|\<bullet\>>|19>>
+    <associate|auto-78|<tuple|<with|mode|<quote|math>|\<bullet\>>|19>>
+    <associate|auto-79|<tuple|4|20>>
+    <associate|auto-8|<tuple|6|3>>
+    <associate|auto-80|<tuple|<with|mode|<quote|math>|\<bullet\>>|20>>
+    <associate|auto-81|<tuple|6|20>>
+    <associate|auto-82|<tuple|6|21>>
+    <associate|auto-83|<tuple|3|21>>
+    <associate|auto-84|<tuple|7|21>>
+    <associate|auto-85|<tuple|7|21>>
+    <associate|auto-86|<tuple|<with|mode|<quote|math>|\<bullet\>>|22>>
+    <associate|auto-87|<tuple|<with|mode|<quote|math>|\<bullet\>>|22>>
+    <associate|auto-88|<tuple|<with|mode|<quote|math>|\<bullet\>>|22>>
+    <associate|auto-89|<tuple|<with|mode|<quote|math>|\<bullet\>>|22>>
+    <associate|auto-9|<tuple|<with|mode|<quote|math>|\<bullet\>>|3>>
+    <associate|auto-90|<tuple|<with|mode|<quote|math>|\<bullet\>>|23>>
+    <associate|auto-91|<tuple|<with|mode|<quote|math>|\<bullet\>>|23>>
+    <associate|auto-92|<tuple|8|23>>
+    <associate|auto-93|<tuple|<with|mode|<quote|math>|\<bullet\>>|23>>
+    <associate|auto-94|<tuple|<with|mode|<quote|math>|\<bullet\>>|23>>
+    <associate|auto-95|<tuple|<with|mode|<quote|math>|\<bullet\>>|23>>
+    <associate|auto-96|<tuple|<with|mode|<quote|math>|\<bullet\>>|24>>
+    <associate|auto-97|<tuple|<with|mode|<quote|math>|\<bullet\>>|24>>
+    <associate|auto-98|<tuple|<with|mode|<quote|math>|\<bullet\>>|24>>
+    <associate|auto-99|<tuple|<with|mode|<quote|math>|\<bullet\>>|24>>
   </collection>
 </references>
 
@@ -2489,47 +2490,495 @@
       <no-break><pageref|auto-4>>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|2<space|2spc><with|color|<quote|dark
-      yellow>|Optimisation par gradient : ADAM et
-      RMSprop<resize|<with|color|<quote|red>|>||||>>>
+      yellow>|Optimisation globale et heuristique<resize|<with|color|<quote|red>|>||||>>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-5><vspace|0.5fn>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|3<space|2spc><with|color|<quote|dark
-      yellow>|Optimisation globale et heuristique<resize|<with|color|<quote|red>|>||||>>>
+      <with|par-left|<quote|1tab>|2.1<space|2spc>Algorithme génétique
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-6><vspace|0.5fn>
+      <no-break><pageref|auto-6>>
 
-      <with|par-left|<quote|1tab>|3.1<space|2spc>Algorithme génétique
+      <with|par-left|<quote|1tab>|1. Principe de l'algorithme génétique
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-7>>
 
-      <with|par-left|<quote|1tab>|3.2<space|2spc>Algorithme de colonies de
-      fourmis <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|1tab>|2. Concepts clés de l'algorithme génétique
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-8>>
 
-      <with|par-left|<quote|1tab>|3.3<space|2spc>Recuit-simulé
-      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <with|par-left|<quote|1tab>|3. Avantages et inconvénients de
+      l'algorithme génétique <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-9>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|4<space|2spc>4D-Var>
+      <with|par-left|<quote|2tab>|Avantages
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-10><vspace|0.5fn>
+      <no-break><pageref|auto-10>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|5<space|2spc>Identification
-      paramétrique dans les EDP> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-11><vspace|0.5fn>
+      <with|par-left|<quote|2tab>|Inconvénients
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-11>>
 
-      <with|par-left|<quote|1tab>|5.1<space|2spc>Techniques de collocation
+      <with|par-left|<quote|1tab>|4. Applications de l'algorithme génétique
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-12>>
 
-      <with|par-left|<quote|1tab>|5.2<space|2spc>Shooting methods
+      <with|par-left|<quote|1tab>|5. Variantes et améliorations
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-13>>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|6<space|2spc>SINDy>
+      <with|par-left|<quote|1tab>|En résumé
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-14><vspace|0.5fn>
+      <no-break><pageref|auto-14>>
+
+      <with|par-left|<quote|1tab>|2.2<space|2spc>Algorithme de colonies de
+      fourmis <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-15>>
+
+      <with|par-left|<quote|1tab>|1. Principe de l'algorithme de colonies de
+      fourmis <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-16>>
+
+      <with|par-left|<quote|1tab>|2. Fonctionnement de l'algorithme de
+      colonies de fourmis <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-17>>
+
+      <with|par-left|<quote|1tab>|3. Concepts clés dans l'algorithme de
+      colonies de fourmis <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-18>>
+
+      <with|par-left|<quote|1tab>|4. Avantages et inconvénients de
+      l'algorithme de colonies de fourmis
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-19>>
+
+      <with|par-left|<quote|2tab>|Avantages
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-20>>
+
+      <with|par-left|<quote|2tab>|Inconvénients
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-21>>
+
+      <with|par-left|<quote|1tab>|5. Applications de l'algorithme de colonies
+      de fourmis <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-22>>
+
+      <with|par-left|<quote|1tab>|6. Variantes et améliorations
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-23>>
+
+      <with|par-left|<quote|1tab>|En résumé
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-24>>
+
+      <with|par-left|<quote|1tab>|2.3<space|2spc>Recuit-simulé
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-25>>
+
+      <with|par-left|<quote|1tab>|1. Principe du recuit simulé
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-26>>
+
+      <with|par-left|<quote|1tab>|2. Fonctionnement de l'algorithme de recuit
+      simulé <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-27>>
+
+      <with|par-left|<quote|1tab>|3. Concepts clés du recuit simulé
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-28>>
+
+      <with|par-left|<quote|1tab>|4. Avantages et inconvénients du recuit
+      simulé <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-29>>
+
+      <with|par-left|<quote|2tab>|Avantages
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-30>>
+
+      <with|par-left|<quote|2tab>|Inconvénients
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-31>>
+
+      <with|par-left|<quote|1tab>|5. Applications du recuit simulé
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-32>>
+
+      <with|par-left|<quote|1tab>|6. Variantes et améliorations
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-33>>
+
+      <with|par-left|<quote|1tab>|En résumé
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-34>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|3<space|2spc>4D-Var>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-35><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|1. Objectif et principe de la méthode
+      4D-Var <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-36>>
+
+      <with|par-left|<quote|1tab>|2. Formulation mathématique
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-37>>
+
+      <with|par-left|<quote|1tab>|3. Processus de minimisation
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-38>>
+
+      <with|par-left|<quote|1tab>|4. Avantages et défis de la méthode 4D-Var
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-39>>
+
+      <with|par-left|<quote|2tab>|Avantages
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-40>>
+
+      <with|par-left|<quote|2tab>|Défis <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-41>>
+
+      <with|par-left|<quote|1tab>|5. Applications
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-42>>
+
+      <with|par-left|<quote|1tab>|6. Variantes de la méthode 4D-Var
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-43>>
+
+      <with|par-left|<quote|1tab>|En résumé
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-44>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|4<space|2spc>Identification
+      paramétrique dans les EDP> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-45><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|4.1<space|2spc>Techniques de collocation
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-46>>
+
+      <with|par-left|<quote|1tab>|Contexte et objectif
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-47>>
+
+      <with|par-left|<quote|1tab>|Principe de la méthode de collocation
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-48>>
+
+      <with|par-left|<quote|1tab>|Étapes de la méthode de collocation pour
+      l'identification paramétrique <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-49>>
+
+      <with|par-left|<quote|1tab>|Avantages et limitations de la méthode de
+      collocation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-50>>
+
+      <with|par-left|<quote|2tab>|Avantages
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-51>>
+
+      <with|par-left|<quote|2tab>|Limitations
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-52>>
+
+      <with|par-left|<quote|1tab>|Exemple illustratif : identification dans
+      l'équation de chaleur <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-53>>
+
+      <with|par-left|<quote|1tab>|Conclusion
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-54>>
+
+      <with|par-left|<quote|1tab>|4.2<space|2spc>Shooting methods
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-55>>
+
+      <with|par-left|<quote|1tab>|1. Principe des Méthodes de Tir pour des
+      EDP <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-56>>
+
+      <with|par-left|<quote|1tab>|2. Approche par Équations aux Dérivées
+      Ordinaires (EDO) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-57>>
+
+      <with|par-left|<quote|1tab>|3. Algorithmes d'Optimisation et Ajustement
+      de Paramètres <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-58>>
+
+      <with|par-left|<quote|1tab>|4. Méthodes de Tir Multiple
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-59>>
+
+      <with|par-left|<quote|1tab>|5. Avantages et Limitations
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-60>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|5<space|2spc>SINDy>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-61><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|Rappel : Principe de la Méthode SINDy
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-62>>
+
+      <with|par-left|<quote|1tab>|Mise en Place de SINDy pour l'Estimation de
+      la Vitesse <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-63>>
+
+      <with|par-left|<quote|2tab>|1. Constitution de la Bibliothèque de
+      Fonctions <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-64>>
+
+      <with|par-left|<quote|2tab>|2. Filtrage des Phases Actives
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-65>>
+
+      <with|par-left|<quote|2tab>|3. Calcul des Dérivées
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-66>>
+
+      <with|par-left|<quote|2tab>|4. Formulation et Résolution du Problème
+      Linéaire Parcimonieux <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-67>>
+
+      <with|par-left|<quote|2tab>|5. Interprétation du Résultat et
+      Reconstitution de la Dynamique <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-68>>
+
+      <with|par-left|<quote|1tab>|Implémentation de SINDy pour un Système
+      Intermittent <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-69>>
+
+      <with|par-left|<quote|1tab>|Avantages de SINDy pour l'Estimation dans
+      un Modèle Intermittent <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-70>>
+
+      <with|par-left|<quote|1tab>|1. Utiliser une Méthode de Régularisation
+      des Dérivées <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-71>>
+
+      <with|par-left|<quote|1tab>|2. Utiliser des Méthodes d'Optimisation
+      Intégrée (SINDy-PI) <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-72>>
+
+      <with|par-left|<quote|1tab>|3. Utiliser des Algorithmes de Filtrage
+      Non-Linéaire (Filtrage de Kalman Étendu ou Filtrage Particulaire)
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-73>>
+
+      <with|par-left|<quote|1tab>|4. Utiliser une Régression Parcimonieuse
+      avec Pénalisation du Bruit <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-74>>
+
+      <with|par-left|<quote|1tab>|5. Collecte de Données Supplémentaires pour
+      la Moyenne et le Filtrage <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-75>>
+
+      <with|par-left|<quote|1tab>|En Conclusion
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-76>>
+
+      <with|par-left|<quote|1tab>|Principe de SINDy-PI : Formulation
+      Intégrale <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-77>>
+
+      <with|par-left|<quote|1tab>|Étapes de la Méthode SINDy-PI
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-78>>
+
+      <with|par-left|<quote|1tab>|Avantages de SINDy-PI en Présence de Bruit
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-79>>
+
+      <with|par-left|<quote|1tab>|Exemples Pratiques d'Utilisation de
+      SINDy-PI <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-80>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|6<space|2spc>Méthode
+      pour estimer avec trajectoires EDS>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-81><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|3. Estimation des Paramètres en Utilisant
+      les Trajectoires Observées <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-82>>
+
+      <with|par-left|<quote|1tab>|4. Estimation par Maximisation de la
+      Vraisemblance <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-83>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|7<space|2spc>Cas
+      d'une EDS à régime intermittent> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-84><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|1. Modéliser la Dynamique Intermittente
+      avec un Processus à Commutations Stochastiques
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-85>>
+
+      <with|par-left|<quote|1tab>|2. Méthodes d'Estimation en Présence d'un
+      Processus de Commutation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-86>>
+
+      <with|par-left|<quote|2tab>|a. Identification des Intervalles
+      d'Activation et Désactivation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-87>>
+
+      <with|par-left|<quote|2tab>|b. Maximisation de la Vraisemblance
+      Conditionnelle <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-88>>
+
+      <with|par-left|<quote|2tab>|c. Optimisation conjointe des Paramètres
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-89>>
+
+      <with|par-left|<quote|2tab>|d. Filtre de Kalman Hybride et Filtrage
+      Particulaire <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-90>>
+
+      <with|par-left|<quote|1tab>|3. Validation du Modèle et Simulations
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-91>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|8<space|2spc>Cas
+      <with|mode|<quote|math>|D=0>> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-92><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|Étapes d'Estimation dans un Modèle
+      Complètement Déterministe avec Intermittence
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-93>>
+
+      <with|par-left|<quote|2tab>|1. Identification des Phases Actives et
+      Inactives <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-94>>
+
+      <with|par-left|<quote|2tab>|2. Formulation de la Vraisemblance pour les
+      Phases Actives <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-95>>
+
+      <with|par-left|<quote|2tab>|3. Estimation des Taux de Transition du
+      Processus de Commutation <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-96>>
+
+      <with|par-left|<quote|2tab>|4. Maximisation de la Vraisemblance
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-97>>
+
+      <with|par-left|<quote|2tab>|5. Méthode Alternative : Moindres Carrés
+      Sélectionnés sur les Phases Actives
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-98>>
+
+      <with|par-left|<quote|2tab>|6. Validation du Modèle
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-99>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|9<space|2spc>Méthode
+      PBDW> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-100><vspace|0.5fn>
+
+      <with|par-left|<quote|1tab>|Contexte et motivation
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-101>>
+
+      <with|par-left|<quote|1tab>|Principes de la méthode PBDW
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-102>>
+
+      <with|par-left|<quote|2tab>|1. <with|font-series|<quote|bold>|math-font-series|<quote|bold>|Approche
+      Background Data-Weak> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-103>>
+
+      <with|par-left|<quote|2tab>|2. <no-break><specific|screen|<resize|<move|<with|color|<quote|#A0A0FF>|->|-0.3em|>|0em||0em|>><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Parameterized
+      Background> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-104>>
+
+      <with|par-left|<quote|1tab>|Étapes de la méthode PBDW
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-105>>
+
+      <with|par-left|<quote|1tab>|Avantages de la méthode PBDW
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-106>>
+
+      <with|par-left|<quote|1tab>|Applications de la méthode PBDW
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-107>>
+
+      <with|par-left|<quote|1tab>|Conclusion
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-108>>
+
+      <with|par-left|<quote|1tab>|1. Principe de Base
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-109>>
+
+      <with|par-left|<quote|1tab>|2. Formulation Mathématique
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-110>>
+
+      <with|par-left|<quote|1tab>|3. Composantes de la Fonction de Coût
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-111>>
+
+      <with|par-left|<quote|1tab>|4. Interprétation du Paramètre de
+      Régularisation <with|mode|<quote|math>|\<lambda\>>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-112>>
+
+      <with|par-left|<quote|1tab>|5. Avantages de LASSO
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-113>>
+
+      <with|par-left|<quote|1tab>|6. Limites de LASSO
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-114>>
+
+      <with|par-left|<quote|1tab>|7. Mise en ÷uvre
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-115>>
+
+      <with|par-left|<quote|1tab>|Conclusion
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-116>>
+
+      <with|par-left|<quote|1tab>|1. Principe du LASSO Généralisé
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-117>>
+
+      <with|par-left|<quote|1tab>|2. Formulation Mathématique
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-118>>
+
+      <with|par-left|<quote|1tab>|3. Composantes de la Fonction de Coût
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-119>>
+
+      <with|par-left|<quote|1tab>|4. Avantages du LASSO Généralisé
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-120>>
+
+      <with|par-left|<quote|1tab>|5. Application du LASSO Généralisé
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-121>>
+
+      <with|par-left|<quote|1tab>|6. Mise en ÷uvre
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-122>>
+
+      <with|par-left|<quote|1tab>|7. Limites du LASSO Généralisé
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-123>>
+
+      <with|par-left|<quote|1tab>|Conclusion
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-124>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|10<space|2spc>STLS>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-125><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>
